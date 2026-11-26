@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NestLedger — Household Budget Planner</title>
+<meta name="description" content="NestLedger helps the Hartono family plan every rupiah: track spending, stay inside monthly budgets, pay bills on time and grow savings goals.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/dashboard">
+      <span class="brand-mark" aria-hidden="true">⌂</span>
+      <span class="brand-text"><strong>NestLedger</strong><small>Household budget planner</small></span>
+    </a>
+    <nav class="mainnav" aria-label="Main navigation">
+      <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+      <a href="#/transactions" data-route="transactions">Transactions</a>
+      <a href="#/budget" data-route="budget">Budget</a>
+      <a href="#/goals" data-route="goals">Savings goals</a>
+      <a href="#/bills" data-route="bills">Bills</a>
+      <a href="#/reports" data-route="reports">Reports</a>
+      <a href="#/tips" data-route="tips">Tips &amp; tools</a>
+    </nav>
+    <div class="month-badge" id="month-badge">November 2026</div>
+  </div>
+</header>
+
+<main class="wrap" id="view" aria-live="polite"></main>
+
+<footer class="wrap site-footer">
+  <p><strong>NestLedger</strong> — a demo household budget for the Hartono family of four (Budi, Sari, Putri &amp; Dimas), Soppeng. All figures are fictional sample data stored only in your browser.</p>
+  <p>
+    <a href="#/tips">Budgeting tips</a> ·
+    <a href="#/reports">Monthly reports</a> ·
+    <button type="button" class="linklike" id="reset-demo">Reset demo data</button>
+  </p>
+  <p class="fineprint">No account, no uploads, no tracking. Your edits live in this browser's local storage.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
